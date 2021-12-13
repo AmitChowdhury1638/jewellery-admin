@@ -1,0 +1,66 @@
+<p-dialog header="Add Category" [(visible)]="display">
+    <div>
+        <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+            <div class="ui-inputgroup row">
+                <div>
+                    <input type="text" formControlName="name" size="30" pInputText placeholder="Category Name">
+                </div> 
+                <span *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="alert alert-danger">
+                    <span class="mandatory" *ngIf="name?.errors?.required">Category Name is required.</span>
+                </span>
+            </div>
+            
+            <div class="ui-inputgroup button">
+                <button pButton class="ui-button-add" label="Save"></button> 
+            </div>
+        </form>
+    </div>
+</p-dialog>
+    <div class="add-customer ">
+        <button pButton type="button" class="ui-button-add" style="margin-right: .5em" (click)="show()">Add Category</button>
+    </div>
+    <div class="data-table">
+        <p-table class="customers" [value]="categories" dataKey="name" editMode="row" [paginator]="true" [rows]="6">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th pSortableColumn="name">Name<p-sortIcon field="name"></p-sortIcon></th>
+                    <th></th>
+                </tr>
+            </ng-template>
+            <ng-template pTemplate="body" let-rowData let-editing="editing" let-ri="rowIndex">
+                <tr [pEditableRow]="rowData">
+                    <td>
+                        <p-cellEditor>
+                            <ng-template pTemplate="input">
+                                <input pInputText type="text" [(ngModel)]="rowData.name">
+                            </ng-template>
+                            <ng-template pTemplate="output">
+                                {{rowData.name}}
+                            </ng-template>
+                        </p-cellEditor>
+                    </td>
+                    <td style="text-align:center">
+                            <button *ngIf="!editing && !editEnabled" pButton type="button" pInitEditableRow icon="pi pi-pencil"
+                                class="ui-button-info" style="margin-right: .5em" (click)="onRowEditInit(rowData, ri)"></button>
+
+                            <button *ngIf="!editing && !editEnabled" pButton type="button" pSaveEditableRow icon="pi pi-trash"
+                                class="ui-button-trash" style="margin-right: .5em" (click)="deleteCategory(rowData, ri)"></button>
+                        
+                        
+                            <button *ngIf="!editing && editEnabled" pButton type="button" pInitEditableRow icon="pi pi-pencil" disabled
+                                class="ui-button-info" style="margin-right: .5em" (click)="onRowEditInit(rowData, ri)"></button>
+
+                            <button *ngIf="!editing && editEnabled" pButton type="button" pSaveEditableRow icon="pi pi-trash" disabled
+                                class="ui-button-trash-light" style="margin-right: .5em" (click)="onRowEditSave(rowData, ri)"></button>
+
+                        
+                            <button *ngIf="editing" pButton type="button" pSaveEditableRow icon="pi pi-check"
+                                class="ui-button-success" style="margin-right: .5em" (click)="onRowEditSave(rowData, ri)"></button>
+                            
+                            <button *ngIf="editing" pButton type="button" pCancelEditableRow icon="pi pi-times"
+                                class="ui-button-danger" (click)="onRowEditCancel(rowData, ri)"></button>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>

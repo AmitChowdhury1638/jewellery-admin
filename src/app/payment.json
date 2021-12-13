@@ -1,0 +1,18 @@
+[
+    {
+       "id":1,
+       "name":"Cash On Delivery"
+    },
+    {
+       "id":2,
+       "name":"Credit Card"
+    },
+    {
+       "id":3,
+       "name":"Debit Card"
+    },
+    {
+       "id":4,
+       "name":"Meal Card"
+    }
+ ]

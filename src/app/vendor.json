@@ -1,0 +1,38 @@
+[
+    {
+       "id":1,
+       "name":"Punjabi Dhaba",
+       "phoneNumber": 7466553724,
+       "email": "test.yy@gmail.com"
+    },
+    {
+       "id":2,
+       "name":"Puja Garments",
+       "phoneNumber": 7466553724,
+       "email": "test.yy@gmail.com"
+    },
+    {
+       "id":3,
+       "name":"Lakhi Pan Shop",
+       "phoneNumber": 7466553724,
+       "email": "test.yy@gmail.com"
+    },
+    {
+       "id":4,
+       "name":"Pizza Hut",
+       "phoneNumber": 7466553724,
+       "email": "test.yy@gmail.com"
+    },
+    {
+      "id":5,
+      "name":"R K Wine Shop",
+      "phoneNumber": 7466553724,
+      "email": "test.yy@gmail.com"
+   },
+   {
+      "id":6,
+      "name":"Harshad Coaching Center",
+      "phoneNumber": 7466553724,
+      "email": "test.yy@gmail.com"
+   }
+ ]

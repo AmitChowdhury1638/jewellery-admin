@@ -1,0 +1,42 @@
+[
+    {
+       "id":1,
+       "name":"Restaurant",
+       "filterHeading":"Khana Khazana"
+    },
+    {
+       "id":2,
+       "name":"Garments",
+       "filterHeading":"Kapda"
+    },
+    {
+       "id":3,
+       "name":"Grocery",
+       "filterHeading":"Modi"
+    },
+    {
+       "id":4,
+       "name":"Gym",
+       "filterHeading":"Body Building"
+    },
+    {
+       "id":5,
+       "name":"Chemist",
+       "filterHeading":"Dawai dukan"
+    },
+    {
+       "id":6,
+       "name":"Real Estate",
+       "filterHeading":"building"
+    },
+    {
+       "id":7,
+       "name":"Tutorials",
+       "filterHeading":"classes"
+    },
+    {
+       "id":8,
+       "name":"Library",
+       "filterHeading":"comics"
+    }
+ ]

@@ -1,0 +1,16 @@
+<div>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <div class="ui-inputgroup row">
+            <div>
+                <input type="text" formControlName="name" size="30" pInputText placeholder="Payment Method">
+            </div> 
+            <span *ngIf="name?.invalid && (name?.dirty || name?.touched)" class="alert alert-danger">
+                <span class="mandatory" *ngIf="name?.errors?.required">Payment Method is required.</span>
+            </span>
+        </div>
+        
+        <div class="ui-inputgroup button">
+            <button pButton class="ui-button-add" label="Save"></button> 
+        </div>
+    </form>
+</div>

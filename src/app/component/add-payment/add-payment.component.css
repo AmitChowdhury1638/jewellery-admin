@@ -1,0 +1,60 @@
+.row {
+    margin: 15px 1px;
+    padding: 6px 1px;
+}
+
+.button {
+    margin: 2px;
+    padding: 2px;
+}
+
+h1 {
+    margin: 2px;
+    padding: 2px;
+}
+
+.categorylist {
+    width: 98%;
+}
+
+.edit {
+    width: 12%;
+}
+
+.delete {
+    width: 12%;
+}
+
+.mandatory{
+    color: rgb(218, 47, 47);
+    font-weight: 600;
+    font-size: small;
+    padding: 12px;
+}
+.ui-button-info {
+    background: rgba(13, 61, 163, 0.87);
+}
+.ui-button-success {
+    background: rgba(13, 61, 163, 0.87);
+    border: rgb(3, 92, 43);
+}
+.ui-button-danger {
+    background: rgb(194, 8, 8);
+    border: rgb(247, 8, 8);
+}
+.ui-button-trash {  
+    background: rgb(146, 7, 7);
+    border: rgb(247, 8, 8);
+}
+.ui-button-trash-light {
+    background: rgb(231, 205, 166);
+    border: rgb(247, 8, 8);
+}
+.ui-button-add {
+    background: #eeeff1;
+    color: darkslategray;
+    border: 1px solid lightblue;
+}
+.add-customer {
+    margin: 24px 2px;
+}
